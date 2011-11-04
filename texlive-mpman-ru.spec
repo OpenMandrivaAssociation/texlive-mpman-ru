@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/metapost/doc/russian/mpman-ru
+# catalog-date 2008-08-22 17:15:44 +0200
+# catalog-license other-free
+# catalog-version 1.004
 Name:		texlive-mpman-ru
 Version:	1.004
 Release:	1
@@ -33,6 +39,7 @@ itself.
 %doc %{_texmfdistdir}/doc/metapost/mpman-ru/mpman-ru.pdf
 %doc %{_texmfdistdir}/doc/metapost/mpman-ru/mpman-ru.tex
 %doc %{_texmfdistdir}/doc/metapost/mpman-ru/mpman.ist
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,3 +50,5 @@ itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
