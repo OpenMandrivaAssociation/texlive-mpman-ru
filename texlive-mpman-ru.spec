@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.doc.tar.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A translation of the user manual, as distributed with MetaPost
@@ -39,7 +37,6 @@ itself.
 %doc %{_texmfdistdir}/doc/metapost/mpman-ru/mpman-ru.pdf
 %doc %{_texmfdistdir}/doc/metapost/mpman-ru/mpman-ru.tex
 %doc %{_texmfdistdir}/doc/metapost/mpman-ru/mpman.ist
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,5 +47,3 @@ itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
