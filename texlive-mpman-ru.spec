@@ -6,7 +6,7 @@
 # catalog-version 1.004
 Name:		texlive-mpman-ru
 Version:	1.004
-Release:	1
+Release:	2
 Summary:	A Russian translation of the MetaPost manual
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/metapost/doc/russian/mpman-ru
