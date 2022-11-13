@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/metapost/doc/russian/mpman-ru
-# catalog-date 2008-08-22 17:15:44 +0200
-# catalog-license other-free
-# catalog-version 1.004
 Name:		texlive-mpman-ru
-Version:	1.004
-Release:	11
+Version:	15878
+Release:	1
 Summary:	A Russian translation of the MetaPost manual
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/metapost/doc/russian/mpman-ru
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -40,24 +34,10 @@ itself.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.004-2
-+ Revision: 754117
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.004-1
-+ Revision: 719071
-- texlive-mpman-ru
-- texlive-mpman-ru
-- texlive-mpman-ru
-- texlive-mpman-ru
-
