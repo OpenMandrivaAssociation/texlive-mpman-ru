@@ -1,6 +1,6 @@
 Name:		texlive-mpman-ru
 Version:	15878
-Release:	1
+Release:	2
 Summary:	A Russian translation of the MetaPost manual
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/metapost/doc/russian/mpman-ru
