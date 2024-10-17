@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	A Russian translation of the MetaPost manual
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/metapost/doc/russian/mpman-ru
+URL:		https://www.ctan.org/tex-archive/info/metapost/doc/russian/mpman-ru
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mpman-ru.doc.r%{version}.tar.xz
